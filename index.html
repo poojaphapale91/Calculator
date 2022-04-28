@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Calculator
+    </title>
+<script src="/js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="maincontainer">
+    <div class="container">
+        <form name="form1">
+        <input type="textbox" name="screen" id="screen"/>
+    </form>
+    </div>
+    <table>
+        
+        <tr>
+            <td> <button style="color:#bf293a" onclick="form1.screen.value+='('"> (</button></td>
+            <td><button style="color:#bf293a" onclick="form1.screen.value+=')'">) </button> </td>
+            <td> <button style="color:#bf293a" onclick="backspace()"> B</button></td>
+            <td> <button  style="color:#47b3a2" onclick="form1.screen.value+='%'">% </button> </td>
+        </tr>
+        <tr>
+            <td><button onclick="form1.screen.value+='9'"> 9</button> </td>
+            <td><button onclick="form1.screen.value+='8'"> 8</button> </td>
+            <td><button onclick="form1.screen.value+='7'"> 7</button> </td>
+            <td> <button style="color:#47b3a2" onclick="form1.screen.value+='*'">* </button> </td>
+        </tr>
+        <tr>
+            <td><button onclick="form1.screen.value+='6'"> 6</button> </td>
+            <td><button  onclick="form1.screen.value+='5'"> 5</button> </td>
+            <td><button onclick="form1.screen.value+='4'"> 4</button> </td>
+            <td><button style="color:#47b3a2" onclick="form1.screen.value+='-'"> -</button> </td>
+        </tr>
+        <tr>
+            <td><button onclick="form1.screen.value+='3'">3 </button> </td>
+            <td><button onclick="form1.screen.value+='2'"> 2</button> </td>
+            <td><button onclick="form1.screen.value+='1'"> 1</button> </td>
+            <td><button style="color:#47b3a2" onclick="form1.screen.value+='+'"> +</button> </td>
+        </tr>
+        <tr>
+            <td><button onclick="form1.screen.value+='0'"> 0 </button> </td>
+            <td> <button onclick="form1.screen.value+='.'"> .</button></td>
+            <td> <button style="color:#47b3a2" onclick="form1.screen.value+='/'"> /</button></td>
+            <td><button  style="color:#47b3a2" onclick="form1.screen.value=eval(form1.screen.value)"> =</button> </td>
+        </tr>
+        <tr>
+            <td colspan="4"><button onclick="form1.screen.value = ' '" style="color:#bf293a; width: 220px; background-color:#22252d">CLear All </button> </td>
+         </tr>
+    </table>
+   
+    
+</div>  
+</body>
+
+
+</html>
